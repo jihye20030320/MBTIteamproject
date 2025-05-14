@@ -1,4 +1,3 @@
-// src/RecommendSports.jsx
 import React from 'react';
 import './RecommendSports.css';
 import yogaImg from './assets/yoga.png';
@@ -6,10 +5,8 @@ import pilatesImg from './assets/pilates.png';
 import swimmingImg from './assets/swimming.png';
 import balletImg from './assets/ballet.png';
 import heartImg from './assets/heart.png';
-import homeIcon from './assets/home.png';
-import sportIcon from './assets/sport.png';
-import foodIcon from './assets/food.png';
-import optionIcon from './assets/option.png';
+
+import TabBar from "./TabBar";
 
 export default function RecommendSports() {
   const sports = [
@@ -62,12 +59,7 @@ export default function RecommendSports() {
         ))}
       </div>
 
-      <div className="bottom-tab">
-        <img src={homeIcon} className="tab-icon" alt="홈" />
-        <img src={sportIcon} className="tab-icon" alt="운동" />
-        <img src={foodIcon} className="tab-icon" alt="식단" />
-        <img src={optionIcon} className="tab-icon" alt="설정" />
-      </div>
+      <TabBar />
     </div>
   );
 }
